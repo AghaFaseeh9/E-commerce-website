@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,36 +62,36 @@ export default function Home() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden bg-[#272343] text-white text-sm p-4 space-y-4 shadow-md">
-            <a
+            <Link
               href="/"
               className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#featured-products"
               className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300"
             >
               Shop
-            </a>
-            <a
+            </Link>
+            <Link
               href="/productspage"
               className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300"
             >
               Products
-            </a>
-            <a
+            </Link>
+            <Link
               href="/productpage"
               className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300"
             >
               Pages
-            </a>
-            <a
+            </Link>
+            <Link
               href="/Aboutpage"
               className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300"
             >
               About
-            </a>
+            </Link>
             <hr className="border-t border-white opacity-30" />
             <p className="block text-white  hover:text-[#007580] hover:underline transition-colors duration-300">
               Eng
@@ -127,44 +127,44 @@ export default function Home() {
           <div className="text-[#636270]">
             <ul className="flex gap-[32px]">
               <li>
-                <a
+                <Link
                   href="/"
                   className="text-[#636270] hover:text-[#007580] hover:underline transition-colors duration-300"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#featured-products"
                   className="text-[#636270] hover:text-[#007580] hover:underline transition-colors duration-300"
                 >
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/productspage"
                   className="text-[#636270] hover:text-[#007580] hover:underline transition-colors duration-300"
                 >
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/productspage"
                   className="text-[#636270] hover:text-[#007580] hover:underline transition-colors duration-300"
                 >
                   Pages
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/Aboutpage"
                   className="text-[#636270] hover:text-[#007580] hover:underline transition-colors duration-300"
                 >
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
