@@ -413,7 +413,7 @@ export default function Home() {
             width={648}
             height={648}
           />
-          <p className="text-[34px] -rotate-90 relative bottom-[380px] right-[350px]">
+          <p className="text-[30px] -rotate-90 relative bottom-[380px] right-[370px]">
             EXPLORE NEW AND POPULAR STYLES
           </p>
         </div>
